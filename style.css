@@ -1,0 +1,266 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-color: #0d1117;
+    --text-color: #e6edf3;
+    --link-color: #58a6ff;
+    --nav-bg: #161b22;
+    --heading-font: "Nunito Sans", sans-serif;
+    --body-font: "Nunito Sans", sans-serif;
+}
+
+.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #0077cc;
+    --nav-bg: #f0f0f0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: 16px;  /* EXACT same as Manan Shah */
+    line-height: 1.6;  /* Line gap bhi same */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--nav-bg);
+    padding: 15px 20px; /* Minimal padding */
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 15px; /* Same size */
+}
+
+nav ul li a.active {
+    font-weight: 600;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 850px; /* Same width as Manan Shah */
+    margin: 60px auto;
+}
+
+.text-content {
+    max-width: 420px; /* Same width as Manan Shah */
+}
+
+h1 {
+    font-size: 2.2rem; /* Same heading size */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.email {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1rem; /* Same as reference */
+}
+
+p {
+    font-size: 1.1rem; /* Line width aur words per line same */
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-top: 12px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.image-content img {
+    width: 260px; /* Exactly same image size */
+    border-radius: 10px;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.about {
+    max-width: 1000px; /* Pehle 850px tha, ab aur wide */
+}
+
+.text-content {
+    max-width: 600px; /* Pehle 420px tha, ab aur wide */
+}
+
+p {
+    font-size: 1rem; /* Pehle 1.1rem tha, ab thoda compact */
+    line-height: 1.4; /* Pehle 1.6 tha, ab thoda tight */
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+    padding-top: 50px; /* Upar se thoda neeche karne ke liye */
+}
+.text-content {
+    transform: translateX(-65px); /* Sirf text ko left shift kar raha hai */
+}
+.social-icons {
+    display: flex;
+    gap: 20px; /* Links ke beech ka gap */
+    justify-content: center; /* Center alignment */
+    margin-top: 20px; /* Thoda upar gap */
+    font-size: 1rem; /* Text size */
+}
+
+.social-icons a {
+    color: #888; /* Light grey color, Manan Shah style */
+    text-decoration: none; /* Underline hatane ke liye */
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic text */
+    transition: color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: white; /* Hover pe white ho jayega */
+}
+:root {
+    --bg-color: #181818;  /* Formal dark gray */
+    --text-color: #E0E0E0; /* Soft white text */
+    --link-color: #A0C4FF; /* Light blue links (soft & readable) */
+    --nav-bg: #222222; /* Slightly lighter dark navbar */
+}
+
+.light-mode {
+    --bg-color: #F9F9F9;  /* Formal light gray */
+    --text-color: #222;   /* Darker text for readability */
+    --link-color: #0077cc; /* Professional blue */
+    --nav-bg: #E0E0E0;  /* Light navbar */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif; /* Modern & formal font */
+    margin: 0;
+    padding: 0;
+}
+.social-icons a {
+    color: #4A90E2; /* Formal blue color */
+    text-decoration: none;
+    font-weight: 500;
+    font-style: italic;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #76B1FF; /* Thoda lighter blue on hover */
+}
+.text-content a {
+    font-style: italic; /* Email italics */
+    color: var(--link-color); /* Same link color */
+    text-decoration: none; /* Underline hata diya */
+}
+body {
+    font-family: 'Inter', sans-serif; /* Clean & modern font */
+    font-size: 16px; /* Balanced size */
+    line-height: 1.6; /* Better readability */
+}
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+a {
+    position: relative;
+    text-decoration: none;
+}
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--link-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+a:hover::after {
+    transform: scaleX(1);
+}
+h1 {
+    font-size: 2.5rem; /* Heading ko aur bada aur prominent banane ke liye */
+}
+
+p {
+    font-size: 1.2rem; /* Body text thoda bada aur readable */
+    line-height: 1.6;  /* Lines ke beech ka gap thoda enhance */
+}
+
+a {
+    font-size: 1.2rem; /* Links bhi text ke saath proportionally bade dikhne chahiye */
+}
+.about {
+    margin-top: 5px; /* Pehle se thoda upar shift karne ke liye */
+}
+body {
+    font-family: 'Inter', sans-serif; /* Clean aur modern look */
+}
+.image-content img {
+    width: 280px;  /* Pehle jo bhi tha usse thoda bada */
+    border-radius: 10px;
+}
+:root {
+    --bg-color: #1c1f26;  /* Deep charcoal blue, formal aur premium look */
+    --text-color: #e0e0e0; /* Soft white for better readability */
+    --link-color: #4a90e2; /* Elegant blue for links */
+    --nav-bg: #24272e; /* Slightly lighter header/nav background */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .text-content {
+        max-width: 90%; /* Ensures text width is optimal */
+        font-size: 16px; /* Slightly smaller for mobile */
+    }
+
+    .image-content img {
+        width: 220px; /* Smaller size for mobile */
+    }
+}
+
