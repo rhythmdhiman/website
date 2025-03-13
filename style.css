@@ -263,4 +263,36 @@ body {
         width: 220px; /* Smaller size for mobile */
     }
 }
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 900px; /* Yeh ensure karega ki text bohot wide na ho */
+    margin: auto; /* Center align hoga */
+    padding: 2rem;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+.image-content img {
+    width: 200px;  /* Image ka size */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ✅ Mobile View ke liye */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content img {
+        width: 140px; /* Mobile pe image thodi chhoti */
+    }
+}
 
